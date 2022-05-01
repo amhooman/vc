@@ -5,7 +5,7 @@ if (!location.hash) {
 const roomHash = location.hash.substring(1);
 
 // TODO: Replace with your own channel ID
-const drone = new ScaleDrone('yiS12Ts5RdNhebyM');
+const drone = new ScaleDrone('8e0kVroe3TnQ5VGY');
 // Room name needs to be prefixed with 'observable-'
 const roomName = 'observable-' + roomHash;
 const configuration = {
@@ -81,7 +81,6 @@ function startWebRTC(isOfferer) {
     video: true,
   }).then(stream => {
     // Display your local video in #localVideo element
-    localVideo.srcObject = stream;
     // Add your stream to be sent to the conneting peer
     stream.getTracks().forEach(track => pc.addTrack(track, stream));
   }, onError);
