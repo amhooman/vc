@@ -14,34 +14,36 @@
       padding: 0 50px;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     }
-    .copy {
+    video {
+      background: white;
+      max-width: calc(50% - 5%);
+      box-sizing: border-box;
+      padding: 0;
+      
+    }
+    .e {
       position: fixed;
       top: 10px;
-      left: 50%;
+      left: 59%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.5);
+      width:"400"
+    }
+    .copy {
+      position: fixed;
+      top: 100px;
+      left: 10%;
       transform: translateX(-50%);
       font-size: 16px;
       color: rgba(0, 0, 0, 0.5);
     }
   </style>
-   <link rel="stylesheet" href="../website/style2.css">
 </head>
 <body>
-   <div class="copy">
-    <nav>
-    <a href="../website/index.html" class="nav-home"> home page </a>
-      
-    <a href="../website/chat/index.html" class="nav-home"> chat </a>
-
-    <a href="../website/games/index.html" class="nav-my-photoshop"> Games </a>
-  </nav>
- </div>
-  <br>
-  <br>
-  
-  
-  <video id="localVideo" autoplay muted></video>
+  <div class="copy">Send your URL to a friend to start a video call</div>
+  <div class="e"> <video id="localVideo" autoplay muted></video></div>
   <video id="remoteVideo" autoplay></video>
-  <p>Send your URL to a friend to start a video call</p>
   <script src="script.js"></script>
 </body>
 </html>
